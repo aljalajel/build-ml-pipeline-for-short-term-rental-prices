@@ -1,0 +1,22 @@
+name: basic_cleaning
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+
+      parameter1:
+        description: ## ADD DESCRIPTION
+        type: string
+
+      paratmeter2:
+        description: ## ADD DESCRIPTION
+        type: string
+
+      parameter3:
+        description: ## ADD DESCRIPTION
+        type: string
+
+
+    command: >-
+        python run.py  --parameter1 {parameter1}  --paratmeter2 {paratmeter2}  --parameter3 {parameter3} 
